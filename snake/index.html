@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+    
+    <script src="https://villaintown.github.io/console.js"></script>
+
+    <title>VillainTown | Snake</title>
+</head>
+<body id="body">
+    <div id="main">
+        <div id="scoreboard">
+            <span> Apples: </span>
+            <span id="score"> 0 </span>
+        </div>
+        <div id="game-container" >
+            <canvas class="aspect-ratio" id="game-canvas" width="31" height="31" ></canvas>
+            <canvas class="aspect-ratio" id="background-canvas" width="31" height="31" ></canvas>
+            <div class="game-overlay aspect-ratio" id="game-start">
+                <div> Use the <span class="text-emphasis" >directional arrows</span> or <span class="text-emphasis" >your finger</span> to constol the snake.</div>
+                <button onclick="startGame()"> START! </button>
+            </div>
+            <div class="game-overlay aspect-ratio" id="game-over">
+                <div> Game over :( </div>
+                <button onclick="startGame()"> Play again! </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
